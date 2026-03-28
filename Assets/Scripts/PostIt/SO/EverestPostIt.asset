@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2198d6675f9a85b48b521fd00e1e76b3, type: 3}
+  m_Name: EverestPostIt
+  m_EditorClassIdentifier: Assembly-CSharp::PostItSO
+  minigameName: Escalar el Everest
+  sceneName: EscalarEverestScene
+  baseSprite: {fileID: -996403745789066911, guid: befad8422273b4a4ead4797f2e1ba6f6, type: 3}
+  selectedSprite: {fileID: -4875603860171288730, guid: 828be109bc023cf478b6296531bfb343, type: 3}

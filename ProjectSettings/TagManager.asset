@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Pointer
+  - Target
+  - Obstacle
+  - Enemy
   layers:
   - Default
   - TransparentFX
