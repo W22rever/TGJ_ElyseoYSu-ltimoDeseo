@@ -37,6 +37,7 @@ public class PizzaManager : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     public void IniciarJuego()
     {
         if (provechoTextObject != null)
@@ -53,6 +54,7 @@ public class PizzaManager : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     public void RegistrarAcierto()
     {
         if (isGameOver || isSuccess) return;
@@ -85,6 +87,7 @@ public class PizzaManager : MonoBehaviour
         noteScript.assignedKey = (KeyCode)randomLetterValue;
     }
 
+    [System.Obsolete]
     public void EndGameBySuccess()
     {
         if (isSuccess || isGameOver) return;
@@ -95,6 +98,7 @@ public class PizzaManager : MonoBehaviour
         EvaluarYMostrarResultado();
     }
 
+    [System.Obsolete]
     public void EndGameByFailure()
     {
         if (isGameOver || isSuccess) return;
@@ -149,6 +153,7 @@ public class PizzaManager : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     private void LimpiarPantalla()
     {
         CancelInvoke(nameof(SpawnNote));
@@ -160,6 +165,7 @@ public class PizzaManager : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     public void EvaluarYMostrarResultado()
     {
         GameObject prefabSeleccionado;
