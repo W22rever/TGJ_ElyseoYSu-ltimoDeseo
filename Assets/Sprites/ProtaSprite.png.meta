@@ -137,12 +137,12 @@ TextureImporter:
       name: ProtaSprite_0
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1771
-        width: 897
-        height: 1222
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 325
+        y: 2292
+        width: 903
+        height: 703
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: ProtaSprite_1
       rect:
         serializedVersion: 2
-        x: 1491
-        y: 1625
-        width: 972
-        height: 1362
-      alignment: 9
-      pivot: {x: 0.5313216, y: 0.11089165}
+        x: 1488
+        y: 1623
+        width: 977
+        height: 1366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: ProtaSprite_2
       rect:
         serializedVersion: 2
-        x: 3033
-        y: 1771
-        width: 1310
-        height: 1244
-      alignment: 9
-      pivot: {x: 0.6265968, y: -0.0006850264}
+        x: 3030
+        y: 1767
+        width: 1314
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: ProtaSprite_3
       rect:
         serializedVersion: 2
-        x: 4815
-        y: 1602
-        width: 1129
+        x: 4811
+        y: 1601
+        width: 1136
         height: 1397
-      alignment: 9
-      pivot: {x: 0.5626246, y: 0.12206157}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: ProtaSprite_4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 97
-        width: 1129
-        height: 1397
-      alignment: 9
-      pivot: {x: 0.5810439, y: 0.12206164}
+        x: 131
+        y: 91
+        width: 1133
+        height: 1400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: ProtaSprite_5
       rect:
         serializedVersion: 2
-        x: 1521
-        y: 254
-        width: 1310
-        height: 1252
-      alignment: 9
-      pivot: {x: 0.3793566, y: 0.011626685}
+        x: 1519
+        y: 253
+        width: 1314
+        height: 1253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: ProtaSprite_6
       rect:
         serializedVersion: 2
-        x: 3414
-        y: 93
-        width: 1129
-        height: 1397
-      alignment: 9
-      pivot: {x: 0.4281658, y: 0.12206166}
+        x: 3411
+        y: 91
+        width: 1136
+        height: 1400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: ProtaSprite_7
       rect:
         serializedVersion: 2
-        x: 5046
-        y: 93
-        width: 1129
-        height: 1397
-      alignment: 9
-      pivot: {x: 0.42816556, y: 0.12206166}
+        x: 5045
+        y: 91
+        width: 1133
+        height: 1400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,7 +321,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ProtaSprite_0: 5233295293034039181
       ProtaSprite_1: -950231603498095628
