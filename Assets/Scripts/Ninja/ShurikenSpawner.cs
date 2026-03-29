@@ -6,7 +6,7 @@ public class ShurikenSpawner : MonoBehaviour
     [SerializeField] private int numberOfShurikens;
     
     private int _currentIndex;
-    
+
     private void Start()
     {
         for (int i = 0; i < numberOfShurikens; i++)

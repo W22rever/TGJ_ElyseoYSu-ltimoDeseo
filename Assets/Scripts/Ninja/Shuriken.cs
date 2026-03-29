@@ -8,13 +8,17 @@ public class Shuriken : MonoBehaviour
     private Vector3 _direction;
     private bool _isMoving;
     private bool _used;
-    
-    private ShurikenSpawner _manager;
-    
+    private Animator _animator;
+
+    private ShurikenSpawner _spawnerManager;
+    private NinjaManager _ninjaManager;
+
     void Awake()
     {
         _camera = Camera.main;
-        _manager = GetComponentInParent<ShurikenSpawner>();
+        _spawnerManager = GetComponentInParent<ShurikenSpawner>();
+        _ninjaManager = FindFirstObjectByType<NinjaManager>();
+        _animator = GetComponentInParent<Animator>();
     }
 
     void OnEnable()
@@ -33,19 +37,30 @@ public class Shuriken : MonoBehaviour
             _direction = (mouseWorldPos - transform.position).normalized;
             
             _isMoving = true;
-        }
         
+
+        if (_ninjaManager != null) _ninjaManager.RegisterShurikenUsed();
+        }
+        if (_animator != null) _animator.SetTrigger("Throw");
+
         if (_isMoving)
         {
             transform.position += _direction * (speed * Time.deltaTime);
         }
     }
-    
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            if (_ninjaManager != null) _ninjaManager.RegisterHit();
+            Destroy(other.gameObject); // Destruye el círculo blanco
+            NotifyAndDestroy();        // Apaga el shuriken y llama al siguiente
+        }
+        else if (other.CompareTag("Obstacle"))
+        {
+            // Si choca con un obstáculo, el obstáculo se queda, pero el shuriken se apaga
             NotifyAndDestroy();
         }
     }
@@ -61,7 +76,7 @@ public class Shuriken : MonoBehaviour
 
         _used = true;
 
-        _manager.ActivateNext();
+        _spawnerManager.ActivateNext();
 
         gameObject.SetActive(false);
     }
