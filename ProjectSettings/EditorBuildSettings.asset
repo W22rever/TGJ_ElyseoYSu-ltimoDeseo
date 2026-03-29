@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NinjaScene.unity
     guid: 89bfc87fe9fa5ec4bbe856f0e15d857b
+  - enabled: 1
+    path: Assets/Scenes/Intro1.unity
+    guid: 14c29e3251014c74cb6ef9d27a2a5239
+  - enabled: 1
+    path: Assets/Scenes/Intro2.unity
+    guid: 734a4295159b395448756c49accce9fe
+  - enabled: 1
+    path: Assets/Scenes/Intro3.unity
+    guid: 4b9ede3f860eade468135b285e3d999b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

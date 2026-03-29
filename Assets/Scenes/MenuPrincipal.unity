@@ -1069,6 +1069,7 @@ GameObject:
   - component: {fileID: 1181643714}
   - component: {fileID: 1181643713}
   - component: {fileID: 1181643716}
+  - component: {fileID: 1181643717}
   m_Layer: 5
   m_Name: JugarButton
   m_TagString: Untagged
@@ -1191,6 +1192,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hover
   zoomScale: 1.2
+--- !u!114 &1181643717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181643711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4328380e424ba419c5cf4c6489bd0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Transition
+  sceneName: Intro1
+  Cortina: {fileID: 1911985726}
+  fadeDuration: 1
+  fadeAudioSource: {fileID: 30711081}
+  fadeSound: {fileID: 8300000, guid: 8fe2353df43d570409a895e7e848d182, type: 3}
+  musicSource: {fileID: 30711081}
+  targetMusicVolume: 0.1
 --- !u!1 &1284480602
 GameObject:
   m_ObjectHideFlags: 0
