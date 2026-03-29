@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Menu.uss?fileID=7433441132597879392&amp;guid=a5fa366bc670856439824cf596b0fedd&amp;type=3#Menu"/>
+    <ui:VisualElement class="botonZoom" style="flex-grow: 1;">
+        <ui:Button text="" name="JugarButton" style="background-image: url(&quot;project://database/Assets/Sprites/Menu/Jugar.png?fileID=2800000&amp;guid=bd2e3e8ec1067c649aa84a654e5ccdd1&amp;type=3#Jugar&quot;); height: 569px; width: 843px; background-color: rgba(188, 188, 188, 0); top: 308px; right: -68px; -unity-text-outline-color: rgba(0, 0, 0, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);"/>
+        <ui:Button text="" selectable="true" name="CreditosButton" style="background-image: url(&quot;project://database/Assets/Sprites/Menu/Creditos.png?fileID=2800000&amp;guid=79a0dd2c0efc4c241bc5e88bc5b643ff&amp;type=3#Creditos&quot;); height: 513px; width: 840px; background-color: rgba(255, 250, 250, 0); top: 18px; left: 63px; -unity-background-image-tint-color: rgb(255, 255, 255); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);"/>
+    </ui:VisualElement>
+</ui:UXML>
