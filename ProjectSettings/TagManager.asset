@@ -4,6 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Pointer
+  - Target
+  - Obstacle
+  - Enemy
   - Note
   layers:
   - Default

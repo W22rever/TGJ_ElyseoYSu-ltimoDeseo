@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2198d6675f9a85b48b521fd00e1e76b3, type: 3}
+  m_Name: BusPostIt
+  m_EditorClassIdentifier: Assembly-CSharp::PostItSO
+  minigameName: Chofer de bus
+  sceneName: ChoferBusScene
+  baseSprite: {fileID: 5930819081263703918, guid: 01b25aa422a4b1e4fa2a8d738afab039, type: 3}
+  selectedSprite: {fileID: 6338625885157819720, guid: 2034c6b30bfc42a448a85f5bfbfcad32, type: 3}
