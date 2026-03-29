@@ -1,0 +1,11 @@
+.botonZoom {
+    transition: transform 0.2s ease-in-out;
+}
+
+.botonZoom:hover {
+    transform: scale(1.2);
+}
+
+.botonZoom:active {
+    transform: scale(0.9);
+}
