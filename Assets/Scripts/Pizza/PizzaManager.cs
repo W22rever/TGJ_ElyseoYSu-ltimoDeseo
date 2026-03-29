@@ -37,7 +37,6 @@ public class PizzaManager : MonoBehaviour
         }
     }
 
-    [System.Obsolete]
     public void IniciarJuego()
     {
         if (provechoTextObject != null)
@@ -53,8 +52,6 @@ public class PizzaManager : MonoBehaviour
             controladorPizza.QuitarPrimerPedazo();
         }
     }
-
-    [System.Obsolete]
     public void RegistrarAcierto()
     {
         if (isGameOver || isSuccess) return;
@@ -87,7 +84,6 @@ public class PizzaManager : MonoBehaviour
         noteScript.assignedKey = (KeyCode)randomLetterValue;
     }
 
-    [System.Obsolete]
     public void EndGameBySuccess()
     {
         if (isSuccess || isGameOver) return;
@@ -153,19 +149,17 @@ public class PizzaManager : MonoBehaviour
         }
     }
 
-    [System.Obsolete]
     private void LimpiarPantalla()
     {
         CancelInvoke(nameof(SpawnNote));
 
-        Note[] notasActivas = FindObjectsOfType<Note>();
+        Note[] notasActivas = FindObjectsByType<Note>(FindObjectsSortMode.None);
         foreach (Note nota in notasActivas)
         {
             Destroy(nota.gameObject);
         }
     }
 
-    [System.Obsolete]
     public void EvaluarYMostrarResultado()
     {
         GameObject prefabSeleccionado;

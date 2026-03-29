@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraZoom : MonoBehaviour
 {
-    [Header("Configuración de Zoom")]
+    // Config zoom
     [SerializeField] private float zoomSpeed = 1f;
     [SerializeField] private float minZoom = 2f;
     [SerializeField] private float maxZoom = 5f;
@@ -57,9 +57,9 @@ public class CameraZoom : MonoBehaviour
             Vector3 difference = _dragOrigin - _cam.ScreenToWorldPoint(Input.mousePosition);
             Vector3 targetPosition = _cam.transform.position + difference;
 
-            // Calculamos cuánto espacio "sobra" entre el zoom actual y el tamaño máximo de 5
+            // Calculamos cuánto espacio sobra entre el zoom actual y el tamaño máximo de 5
             float verticalLimit = maxZoom - _cam.orthographicSize;
-            float horizontalLimit = verticalLimit * _cam.aspect; // Ajusta el ancho al 16:9 de tu pantalla
+            float horizontalLimit = verticalLimit * _cam.aspect;
 
             // Limitamos la posición para que NUNCA pase del borde original
             float clampedX = Mathf.Clamp(targetPosition.x, _startPosition.x - horizontalLimit, _startPosition.x + horizontalLimit);

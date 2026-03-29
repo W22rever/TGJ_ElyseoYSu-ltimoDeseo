@@ -19,7 +19,7 @@ public class LineDrawer : MonoBehaviour
 
     private void Update()
     {
-        // --- Si el juego terminó, salimos de la función y bloqueamos el dibujo ---
+        // Si el juego terminó, salimos de la función y bloqueamos el dibujo
         if (pathManager != null && pathManager.isGameOver) return;
 
         if (Input.GetMouseButtonDown(0))
