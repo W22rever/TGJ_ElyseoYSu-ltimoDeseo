@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 79a0dd2c0efc4c241bc5e88bc5b643ff
+guid: d190e27b7b936fa40b9c187befd759ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3337509474209396084
-    second: IDEAS (4)_0
+      213: 9195236677145374187
+    second: image___0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 400, y: 400, z: 400, w: 400}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IDEAS (4)_0
+      name: image___0
       rect:
         serializedVersion: 2
-        x: 300
-        y: 300
-        width: 1500
-        height: 650
+        x: 0
+        y: 0
+        width: 630
+        height: 500
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8a8f3be0d8cea1d0800000000000000
-      internalID: -3337509474209396084
+      spriteID: beda4e61a0b0c9f70800000000000000
+      internalID: 9195236677145374187
       vertices: []
       indices: 
       edges: []
@@ -138,8 +138,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e87363352ceb7a146acac599f7a9adbf
-    internalID: -428263003
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IDEAS (4)_0: -3337509474209396084
+      image___0: 9195236677145374187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

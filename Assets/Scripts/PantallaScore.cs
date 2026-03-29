@@ -1,18 +1,16 @@
 using UnityEngine;
-using TMPro; // Necesario para TextMeshPro
+using TMPro;
 
 public class PanelResultados : MonoBehaviour
 {
-    // Arrastra los textos de tu prefab a estos huecos en el Inspector
-    public TextMeshProUGUI Puntaje;
-    public TextMeshProUGUI Aciertos;
-    public TextMeshProUGUI Fallos;
-
-    // Método público para recibir los datos
+    [SerializeField] private TextMeshProUGUI points;
+    [SerializeField] private TextMeshProUGUI success;
+    [SerializeField] private TextMeshProUGUI fails;
+    
     public void ConfigurarTextos(int fallos, int aciertos, int total)
     {
-        Aciertos.text = aciertos.ToString();
-        Fallos.text = fallos.ToString();
-        Puntaje.text = total.ToString();
+        success.text = aciertos.ToString();
+        fails.text = fallos.ToString();
+        points.text = total.ToString();
     }
 }

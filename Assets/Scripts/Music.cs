@@ -3,19 +3,19 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Music : MonoBehaviour
 {
-    public AudioClip backgroundMusic; 
+    [SerializeField] private AudioClip backgroundMusic; 
 
-    private AudioSource audioSource;
+    private AudioSource _audioSource;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponent<AudioSource>();
 
-        if (backgroundMusic != null)
+        if (backgroundMusic)
         {
-            audioSource.clip = backgroundMusic;
-            audioSource.loop = true;  
-            audioSource.Play();
+            _audioSource.clip = backgroundMusic;
+            _audioSource.loop = true;  
+            _audioSource.Play();
         }
         else
         {

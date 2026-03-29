@@ -8,17 +8,16 @@ public class HitZone : MonoBehaviour
     [System.Obsolete]
     void Start()
     {
-        // Buscamos automáticamente
         gameManager = FindObjectOfType<PizzaManager>();
     }
 
     void Update()
     {
-        if (activeNote != null && Input.anyKeyDown)
+        if (activeNote && Input.anyKeyDown)
         {
             if (Input.GetKeyDown(activeNote.assignedKey))
             {
-                if (gameManager != null)
+                if (gameManager)
                 {
                     gameManager.RegistrarAcierto();
                 }
@@ -28,12 +27,12 @@ public class HitZone : MonoBehaviour
             }
             else
             {
-                Debug.Log("¡Tecla equivocada!");
+                Debug.Log("ï¿½Tecla equivocada!");
             }
         }
     }
 
-    // Cuando la nota entra a la línea
+    // Cuando la nota entra a la lï¿½nea
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Note"))

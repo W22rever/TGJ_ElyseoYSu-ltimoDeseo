@@ -40,11 +40,11 @@ public class Transition : MonoBehaviour, IPointerClickHandler
     private IEnumerator FadeAndLoadScene(string sceneName)
     {
      
-        if (musicSource != null)
+        if (musicSource)
             originalVolume = musicSource.volume;
 
         
-        if (fadeAudioSource != null && fadeSound != null)
+        if (fadeAudioSource && fadeSound)
         {
             fadeAudioSource.PlayOneShot(fadeSound);
         }
@@ -65,7 +65,7 @@ public class Transition : MonoBehaviour, IPointerClickHandler
             color.a = Mathf.Lerp(0f, 1f, progress);
             Cortina.color = color;
 
-            if (musicSource != null)
+            if (musicSource)
                 musicSource.volume = Mathf.Lerp(originalVolume, targetMusicVolume, progress);
 
             yield return null;
@@ -75,7 +75,7 @@ public class Transition : MonoBehaviour, IPointerClickHandler
         color.a = 1f;
         Cortina.color = color;
 
-        if (musicSource != null)
+        if (musicSource)
             musicSource.volume = targetMusicVolume;
 
         
