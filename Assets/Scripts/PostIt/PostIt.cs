@@ -2,7 +2,6 @@ using UnityEngine;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using Object = UnityEngine.Object;
 
 public class PostIt : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -24,6 +23,8 @@ public class PostIt : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private Vector3 _originalScale;
     private bool _isSelected;
     private Image _imageComponent;
+    
+    public PostItSO GetData() => postItData;
     
     //private PathManager _pathManager;
 
@@ -79,5 +80,17 @@ public class PostIt : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private void IncreaseScale() => transform.localScale = _originalScale * growthValue;
     private void DecreaseScale() => transform.localScale = _originalScale;
     
-    private void OnChageState() => OnStateChange?.Invoke(this, _isSelected);
+    private void OnChageState()
+    {
+        OnStateChange?.Invoke(this, _isSelected);
+
+        if (_isSelected)
+        {
+            MinigameSequenceManager.Instance.AddMinigame(postItData);
+        }
+        else
+        {
+            MinigameSequenceManager.Instance.RemoveMinigame(postItData);
+        }
+    }
 }

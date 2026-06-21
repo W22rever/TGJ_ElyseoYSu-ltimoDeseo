@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TatuajePostIt
   m_EditorClassIdentifier: Assembly-CSharp::PostItSO
   minigameName: Tatuaje
-  sceneName: TatuajeScene
+  sceneName: TattooScene
   baseSprite: {fileID: 7462407890193233986, guid: 457f4f295b9d27842a25615bd411fc74, type: 3}
   selectedSprite: {fileID: -7591868200544302772, guid: 830a1f76335cc604094aa2962df5550a, type: 3}

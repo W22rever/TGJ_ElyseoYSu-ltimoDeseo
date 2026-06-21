@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TiburonPostIt
   m_EditorClassIdentifier: Assembly-CSharp::PostItSO
   minigameName: Domar un tiburon
-  sceneName: DomarTiburonScene
+  sceneName: SharkScene
   baseSprite: {fileID: 6035835962452933621, guid: 9bbeed70587d8b94597138787d121698, type: 3}
   selectedSprite: {fileID: -6124720306644192913, guid: 0aa1978ff45a31a4893ff024b067328f, type: 3}

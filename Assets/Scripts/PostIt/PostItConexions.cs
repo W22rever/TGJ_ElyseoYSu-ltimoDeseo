@@ -6,7 +6,7 @@ public class PostItConexions : MonoBehaviour
 {
     [SerializeField] GameObject buttonNext;
     
-    [HideInInspector] public int maxPostItSelected = 5;
+    public int maxPostItSelected = 5;
     [HideInInspector] public List<PostIt> postIts = new List<PostIt>(); // Con solo la lista puedo obtener un contador con la propiedad .Count(). NO OLVIDAR INICIALIZAR LA LISTA
     
     private bool _isButtonActive;

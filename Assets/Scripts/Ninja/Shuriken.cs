@@ -39,9 +39,10 @@ public class Shuriken : MonoBehaviour
             _isMoving = true;
         
 
-        if (_ninjaManager != null) _ninjaManager.RegisterShurikenUsed();
+            if (_ninjaManager) _ninjaManager.RegisterShurikenUsed();
+            if (_animator) _animator.SetTrigger("Throw");
         }
-        if (_animator != null) _animator.SetTrigger("Throw");
+
 
         if (_isMoving)
         {
@@ -55,12 +56,12 @@ public class Shuriken : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             if (_ninjaManager != null) _ninjaManager.RegisterHit();
-            Destroy(other.gameObject); // Destruye el círculo blanco
+            Destroy(other.gameObject); 
             NotifyAndDestroy();        // Apaga el shuriken y llama al siguiente
         }
         else if (other.CompareTag("Obstacle"))
         {
-            // Si choca con un obstáculo, el obstáculo se queda, pero el shuriken se apaga
+            // Si choca con un obstï¿½culo, el obstï¿½culo se queda, pero el shuriken se apaga
             NotifyAndDestroy();
         }
     }

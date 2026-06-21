@@ -137,10 +137,10 @@ TextureImporter:
       name: ProtaSprite_0
       rect:
         serializedVersion: 2
-        x: 325
-        y: 2292
+        x: 336
+        y: 1767
         width: 903
-        height: 703
+        height: 1228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

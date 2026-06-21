@@ -88,7 +88,7 @@ public class PizzaManager : MonoBehaviour
     {
         if (isSuccess || isGameOver) return;
         isSuccess = true;
-        Debug.Log("¡Timer terminado, ganaste!");
+        Debug.Log("Timer terminado, ganaste!");
         MostrarTextoFinish();
         LimpiarPantalla();
         EvaluarYMostrarResultado();
@@ -99,7 +99,7 @@ public class PizzaManager : MonoBehaviour
     {
         if (isGameOver || isSuccess) return;
         isGameOver = true;
-        Debug.Log("¡Game Over, perdiste!");
+        Debug.Log("ï¿½Game Over, perdiste!");
         MostrarTextoFinish();
         LimpiarPantalla();
         EvaluarYMostrarResultado(); 
@@ -165,7 +165,7 @@ public class PizzaManager : MonoBehaviour
         GameObject prefabSeleccionado;
         int fallos = totalNotasGeneradas - correctNotesPressed;
 
-        // Evaluar la condición 50% aciertos
+        // Evaluar la condiciï¿½n 50% aciertos
         float porcentaje = (float)correctNotesPressed / totalNotasGeneradas;
 
         if (porcentaje >= 0.5f)
@@ -182,7 +182,7 @@ public class PizzaManager : MonoBehaviour
         GameObject panelInstanciado = Instantiate(prefabSeleccionado, canvasTransform);
         panelInstanciado.SetActive(true);
 
-        // Buscar el script en el objeto recién creado y poblar los textos
+        // Buscar el script en el objeto reciï¿½n creado y poblar los textos
         PanelResultados scriptPanel = panelInstanciado.GetComponent<PanelResultados>();
 
         if (scriptPanel != null)

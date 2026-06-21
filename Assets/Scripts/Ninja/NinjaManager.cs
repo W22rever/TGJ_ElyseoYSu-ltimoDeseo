@@ -101,7 +101,7 @@ public class NinjaManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("¡Falta asignar las pantallas en el NinjaManager!");
+            Debug.LogError(" asignar las pantallas en el NinjaManager!");
         }
     }
 }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PizzaPostIt
   m_EditorClassIdentifier: Assembly-CSharp::PostItSO
   minigameName: Concurso de Pizza
-  sceneName: ConcursoPizzaScene
+  sceneName: PizzaScene
   baseSprite: {fileID: 1012404912816122422, guid: 605e909c728358144923cfc051b96365, type: 3}
   selectedSprite: {fileID: -4633005921222242742, guid: d510710f8d650b94991a452350e14809, type: 3}
